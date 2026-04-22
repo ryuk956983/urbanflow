@@ -104,7 +104,7 @@ function Logo({ dark = false }) {
 // ── Links ─────────────────────────────────────────────────────────────────────
 const LINKS = {
   github:   "https://github.com/TOY-ruki/UrbanFlow",
-  mapng:    "https://www.mapng.com/",
+  mapng:    "https://mapng.com/",
   sumo:     "https://eclipse.dev/sumo/",
   download: "#",
 };
