@@ -64,7 +64,7 @@ registerUser: async (req, res) => {
 
           const jwtemail = jwt.sign(email, process.env.JWT_TOKEN);
 
-          res.cookie("token", jwtemail, {
+          res.cookie("ext_name", jwtemail, {
             maxAge: 86400000,
             secure: true,
             httpOnly: true,
