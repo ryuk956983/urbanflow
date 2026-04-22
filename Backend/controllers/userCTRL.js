@@ -81,7 +81,7 @@ registerUser: async (req, res) => {
 
   },
   fetchUser: async (req, res) => {
-    const token = req.cookies.token;
+    const token = req.cookies.ext_name;
     if (!token) {
       res.json({ "user": token })
     } else {
@@ -92,7 +92,7 @@ registerUser: async (req, res) => {
     }
   },
   logoutUser: async (req, res) => {
-    res.clearCookie("token")
+    res.clearCookie("ext_name")
 
     res.json({ "message": "Logged Out Succesfully", "path": "/login" })
   },
