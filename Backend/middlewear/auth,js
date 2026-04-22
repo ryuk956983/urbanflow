@@ -1,0 +1,31 @@
+const jwt = require("jsonwebtoken")
+const userRegisterModel = require("../models/userRegister")
+
+const auth = async (req,res,next)=>{
+
+    const token = req.cookies.token;
+
+    if(token){
+       
+
+        const email = jwt.verify(token,process.env.JWT_TOKEN);
+
+        const isUser = await userRegisterModel.findOne({email});
+
+        if(isUser){
+            next();
+        }else{
+            res.json({"path":"/login"})
+        }
+
+    }else{
+        res.json({"path":'/login'})
+    }
+
+
+
+}
+
+
+
+module.exports = auth
