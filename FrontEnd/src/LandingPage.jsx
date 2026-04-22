@@ -104,7 +104,7 @@ function Logo({ dark = false }) {
 // ── Links ─────────────────────────────────────────────────────────────────────
 const LINKS = {
   github:   "https://github.com/TOY-ruki/UrbanFlow",
-  mapng:    "https://www.mapng.de/",
+  mapng:    "https://www.mapng.com/",
   sumo:     "https://eclipse.dev/sumo/",
   download: "#",
 };
@@ -240,7 +240,7 @@ function Hero() {
         {/* Primary CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5"
           style={{ animation: "fadeInUp 0.9s 0.63s ease both", opacity: 0 }}>
-          <a href={LINKS.download}
+          <a href={LINKS.github}
             className="group flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-base transition-all hover:scale-105 w-full sm:w-auto justify-center"
             style={{ background: T.ink, color: T.bg, fontFamily: "'Space Mono', monospace", boxShadow: "4px 4px 0 rgba(26,26,26,0.18)" }}>
             <Download size={19} className="group-hover:-translate-y-0.5 transition-transform" />
@@ -498,7 +498,7 @@ function DownloadSection() {
 
             {/* Primary buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href={LINKS.download}
+              <a href={LINKS.github}
                 className="group flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base transition-all hover:scale-105"
                 style={{ background:T.bg, color:T.ink, fontFamily:"'Space Mono',monospace", boxShadow:"4px 4px 0 rgba(245,240,232,0.08)" }}>
                 <Download size={20} className="group-hover:-translate-y-0.5 transition-transform" /> Download .exe
@@ -699,7 +699,7 @@ function Footer() {
               style={{ border:"1px solid rgba(245,240,232,0.13)", color:"rgba(245,240,232,0.45)" }}
               onMouseEnter={e => { e.currentTarget.style.color=T.bg; e.currentTarget.style.borderColor="rgba(245,240,232,0.35)"; }}
               onMouseLeave={e => { e.currentTarget.style.color="rgba(245,240,232,0.45)"; e.currentTarget.style.borderColor="rgba(245,240,232,0.13)"; }}>
-             
+             Github
             </a>
             <button onClick={() => scroll("download")}
               className="flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all hover:scale-105"
