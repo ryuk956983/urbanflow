@@ -14,7 +14,7 @@ const LoginPage = () => {
   const notifySucess = (text) => toast.success(text);
     const notifywarn = (text) => toast.warn(text);
     function isValidGmail(email) {
-  const gmailRegex = /^(?=[a-z0-9.]{6,30}@) (?!.*?\.\.) [a-z0-9] [a-z0-9.]* [a-z0-9] @gmail\.com$/x;
+
   const standardRegex = /^(?=[a-z0-9.]{6,30}@)(?!.*?\.\.)[a-z0-9][a-z0-9.]*[a-z0-9]@gmail\.com$/;
   
   return standardRegex.test(email.toLowerCase());
