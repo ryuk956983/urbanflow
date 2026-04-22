@@ -64,7 +64,7 @@ registerUser: async (req, res) => {
 
           const jwtemail = jwt.sign(email, process.env.JWT_TOKEN);
 
-          res.cookie("ext_name", jwtemail, {
+          res.cookie("token", jwtemail, {
             maxAge: 86400000,
             secure: true,
             httpOnly: true,
@@ -81,7 +81,7 @@ registerUser: async (req, res) => {
 
   },
   fetchUser: async (req, res) => {
-    const token = req.cookies.ext_name;
+    const token = req.cookies.token;
     if (!token) {
       res.json({ "user": token })
     } else {
@@ -92,7 +92,7 @@ registerUser: async (req, res) => {
     }
   },
   logoutUser: async (req, res) => {
-    res.clearCookie("ext_name")
+    res.clearCookie("token")
 
     res.json({ "message": "Logged Out Succesfully", "path": "/login" })
   },
