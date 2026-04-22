@@ -548,10 +548,10 @@ function DownloadSection() {
 
 // ── About ─────────────────────────────────────────────────────────────────────
 const TEAM = [
-  { name:"Alex Sharma", role:"Simulation Core" },
-  { name:"Priya Mehta",  role:"Data Analytics" },
-  { name:"Rohan Verma",  role:"Visualization" },
-  { name:"Neha Singh",   role:"Frontend & UI" },
+  { name:"Raghvendra Pratap Singh", role:"Simulation Core" },
+   { name:"Anurag Verma",   role:"Frontend & Backend" },
+  { name:"Awnish Yadav",  role:"Researcher" },
+ 
 ];
 
 function About() {
