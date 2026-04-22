@@ -92,7 +92,12 @@ registerUser: async (req, res) => {
     }
   },
   logoutUser: async (req, res) => {
-    res.clearCookie("token")
+ res.clearCookie("token", {
+    path: "/",
+    secure: true,      // Must match original
+    httpOnly: true,    // Must match original
+    sameSite: 'None'   // Must match original
+});
 
     res.json({ "message": "Logged Out Succesfully", "path": "/login" })
   },
