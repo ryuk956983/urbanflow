@@ -506,7 +506,7 @@ function DownloadSection() {
               <a href={LINKS.github} target="_blank" rel="noreferrer"
                 className="group flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base transition-all hover:scale-105"
                 style={{ border:"2px solid rgba(245,240,232,0.28)", color:T.bg, background:"transparent", fontFamily:"'Space Mono',monospace" }}>
-                 Github
+                View Source
                 </a>
             </div>
 
