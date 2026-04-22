@@ -583,7 +583,7 @@ function About() {
           </div>
         </div>
         <h3 className="text-center font-bold mb-8 text-xl" style={{ fontFamily:"'Orbitron',sans-serif", color:T.ink }}>Team Members</h3>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {TEAM.map(({ name, role }, i) => {
             const [r, v] = useReveal();
             const bgs = [T.ink,"#3A2E1A","#1A3028","#2A1A3A"];
